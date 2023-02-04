@@ -21,7 +21,7 @@ def mul():
 try:
     """Catching an exception if a user inputs invalid value"""
 
-    num1 = int(input("please input your first number:"))
+    num1 = float(input("please input your first number:"))
 
     operations = {"+": add, "-": sub, "/": div, "*": mul}
     # loop through dictionary to keys
@@ -30,7 +30,7 @@ try:
 
     sign = input("please select symbol:")
 
-    num2 = int(input("please select second number:"))
+    num2 = float(input("please select second number:"))
     """Use dictionary keys to get function value"""
     get_symbol_value = operations[sign]
     answer = get_symbol_value()
